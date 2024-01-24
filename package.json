@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "downloadjs": "^1.4.7",
+    "html-to-image": "^1.11.4",
+    "html2canvas": "^1.4.1"
+  }
+}

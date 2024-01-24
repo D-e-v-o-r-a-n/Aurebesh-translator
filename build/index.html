@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="/translation.js" async></script>
+    <script src="/node_modules/html2canvas/dist/html2canvas.js" async></script>
+    <title>Aurebesh Transcription</title>
+</head>
+<body>
+    <div class="stars">
+        <span style="--i:91"></span>
+        <span style="--i:2"></span>
+        <span style="--i:37"></span>
+        <span style="--i:51"></span>
+        <span style="--i:73"></span>
+        <span style="--i:2"></span>
+        <span style="--i:1"></span>
+        <span style="--i:5"></span>
+        <span style="--i:8"></span>
+        <span style="--i:12"></span>
+        <span style="--i:70"></span>
+        <span style="--i:66"></span>
+        <span style="--i:5"></span>
+        <span style="--i:85"></span>
+        <span style="--i:93"></span>
+        <span style="--i:27"></span>
+        <span style="--i:3"></span>
+        <span style="--i:24"></span>
+        <span style="--i:52"></span>
+        <span style="--i:43"></span>
+    </div>
+    <div class="headers">
+        <h1 id="normal-h1">AUREBESH TRANSCRIPTION</h1>
+        <h1 id="aurebesh-h1">AUREBESH TRANSCRIPTION</h1>
+    </div>
+
+    <div id="main-content-div">
+        <div class="boxes">
+            <h2>Input</h2>
+            <textarea id="normal" spellcheck="false" rows="13" cols="66" wrap="hard"></textarea>
+        </div>
+
+        <div class="boxes">
+            <h2>Output</h2>
+            <div id="aurebesh-div"></div>
+        </div>
+    </div>
+
+    <div class="side-content-div">
+        <div id="button-div">
+            <button class="slide" onclick="GetImage()">Download transcripted image</button>
+        </div>
+        <span>MAXIMUM AMOUNT OF CHARACTERS IS 480</span>
+    
+        <div id="Help" data-aos="fade-left"  data-aos-duration="1000"  data-aos-delay="200">
+            <h2>Usage</h2> 
+            <section id="tutorial">
+                <img src="static/exampleAurebesh.gif" width="600px" height="300px" alt="" srcset="">
+                <p>
+                    Function of this site is pretty obvious, but explaining isn't something that will break it (or at least I hope so).
+                    Therefore, if for some reason you're in need of aurebesh  you can generate an downloadable image which you can use wherever you want.
+                    Like you can see on this gif, only thing you need to do is write your text in "Input" labeled area and you will see current output in real time.
+                    When you're finished with writing, just press the button and the image with your text in aurebesh will be downloaded. 
+                </p>
+            </section>
+        </div>
+        <div class="curious"data-aos="fade-right"  data-aos-duration="1000"  data-aos-delay="200">
+            <p>For any curious people why there is no option of translation in the opposite way: fun of understanding aurebesh is learing to read it by yourself, knowing that not everyone
+                can just put it into translator. However if you want to learn characters I will provide the table below
+            </p>
+            <div id="aurebesh-table">
+            <img src="static/aurebesh_provided.png" alt="">
+            </div>
+            <span>May the force be with you</span>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

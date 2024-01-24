@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'Aurebesh';
+    src: url(fonts/AurebeshAfCanon-K7Ope.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Kanit"
+}
+body{
+    background-image: url("/static/space_background.jpg");
+    overflow-x: hidden;
+    cursor: url('/static/cursors/blue.cur'), auto;
+
+}
+
+#main-content-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+textarea{
+    background-color: #DFF6FF;
+    box-shadow: 0px 0px 40px 9px rgb(255, 255, 255);
+    margin-inline: 2.5rem;
+    resize: none;
+    max-height: 400px;
+    max-width: 735px;
+    overflow-y: hidden;
+    outline: none;
+}
+#aurebesh-h1{
+    font-family: 'Aurebesh';
+}
+#aurebesh-div{
+    background-color: #DFF6FF;
+    max-height: 400px;
+    max-width: 735px;
+    box-shadow: 0px 0px 20px 10px  rgb(255, 255, 255);
+    overflow-wrap: break-word;
+    overflow-y: hidden;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    margin-inline: 2.5  rem;
+    font-family: 'Aurebesh';
+
+    margin: 40px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    color: #1363DF;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1363DF;
+}
+
+.boxes{
+    width: 735px;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+               
+button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+}
+
+.slide:hover,
+.slide:focus {
+    box-shadow: inset 18rem 0 0 0px white, 0 0 50px 10px #1363DF;
+}
+
+button {
+    color: #ffffff;
+    transition: 0.5s;
+}
+button:hover{
+    border-color: #1363DF;
+    color: #200979;
+}
+#Help{
+    margin-top: 20rem;
+    padding: 1rem;
+}
+
+#tutorial{
+    display: flex;
+    align-items: flex-start;
+    justify-items: center;
+    padding: 1rem;
+}
+
+#tutorial p{
+   color: #DFF6FF;
+   margin: 1rem;
+
+}
+span{
+    display: flex;
+    color: #DFF6FF;
+    justify-content: center;
+    align-items: center;
+}
+
+.curious{
+    color: #DFF6FF;
+
+}
+.curious img{
+    width: 50rem;
+    height: 30rem;
+}
+.curious span{
+    font-size: 2rem;
+    margin-top: 50px;
+}
+#aurebesh-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stars{
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    z-index: -100;
+}
+.stars span{
+    position: relative;
+    top: 1px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #DFF6FF;
+    
+    animation: animate 2s linear infinite;
+    animation-duration: calc(2000s/var(--i));
+}
+.stars span:nth-child(even){
+    animation: animate_v2 2s linear infinite;
+    animation-duration: calc(2000s/var(--i));
+}
+
+@keyframes animate {
+    10%{
+        box-shadow: 0 0 70px 15px white;
+
+    }
+    40%{
+        box-shadow: 0 0 0 0 ;
+    }
+
+    80%{
+        box-shadow: 0 0 70px 15px blue;
+
+    }
+    100%{
+        transform: translate(30vh,245vh)
+    }
+
+}
+
+@keyframes animate_v2 {
+    10%{
+        box-shadow: 0 0 70px 15px blue;
+
+    }
+    40%{
+        box-shadow: 0 0 0 0 ;
+    }
+    80%{
+        box-shadow: 0 0 70px 15px white;
+
+    }
+    100%{
+        transform: translate(-30vh,245vh)
+    }
+
+}
+
+.curious span{
+    transition: all 1s;
+    
+}
+.curious span:hover{
+    color: #1363DF;
+}
+.headers{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 8rem;
+    border: 1px solid #1363DF;
+    top: -1px;
+    right: 0.042rem;
+    justify-content: center;
+    align-items:normal;
+    background-color: black;
+}
+.headers h1{
+    margin-left: 50px;
+
+}
+#normal-h1{
+    font-size: 30px;
+    line-height: 1;
+    letter-spacing: 0.5em;
+    font-weight: 300;
+    font-style: normal;
+  
+}
